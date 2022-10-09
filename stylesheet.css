@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: pink solid; */
+  }
+
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+html {
+  
+}
+
+body {
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-size: 100% 100%;
+  back
+  font-family: Kumbh Sans;
+  border: pink solid;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.accordion-body {
+  background: white;
+  margin: 10em auto;
+  max-width: 300px;
+  border-radius: 10%;
+}
+
+.accordion {
+  padding: 2em;
+}
+
+
+/* Plan(mobile)
+- Align the svg img with the main container
+- Experiment with CSS accordion setups and consider incorporating JS
+  - Use codepen
+- Layout making sure the main container has correct margins
+- Fine tune the details
+
+Plan(desktop)
+- 
+-  */
