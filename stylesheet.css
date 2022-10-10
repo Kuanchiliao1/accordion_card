@@ -1,3 +1,13 @@
+:root {
+  --text-blue: hsl(238, 29%, 16%);
+  --test-red: hsl(14, 88%, 65%);
+  --text-dkblue: hsl(240, 6%, 50%);
+  --text-xdkblue: hsl(237, 12%, 33%);
+  --gradient-voilet: hsl(273, 75%, 66%);
+  --gradient-blue: hsl(240, 73%, 65%);
+  --divider-blue: hsl(240, 5%, 91%);
+}
+
 *,
 *::before,
 *::after {
@@ -7,32 +17,40 @@
 
 @import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
-html {
-  
-}
-
 body {
-  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background: linear-gradient(
+    var(--gradient-voilet),
+    var(--gradient-blue)
+  );
   background-size: 100% 100%;
-  back
   font-family: Kumbh Sans;
   border: pink solid;
-  height: 100vh;
+
+  /* Note: I originally used height: 100vh, not sure why min-height is better here */
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
+  margin-top: 2em;
 }
 
 .accordion-body {
   background: white;
-  margin: 10em auto;
+  margin: 0 auto;
   max-width: 300px;
   border-radius: 10%;
 }
 
 .accordion {
   padding: 2em;
+}
+
+img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto -4em auto;
+  filter: drop-shadow( 0px 20px 0px lightgrey);
 }
 
 
